@@ -22,7 +22,7 @@ public class UpdateTablePreparedStm {
 
             Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Driver loaded");
-            conn = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username", "password");
+            conn = DriverManager.getConnection("jdbc:oracle:thin:hostname:1521:grok", "username", "password");
 
             // Create a prepared statement for update
             String sql = "UPDATE COUNTRIES SET LIFE_EXPECTANCY = ? WHERE COUNTRY_ID = ?";
