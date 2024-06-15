@@ -13,7 +13,7 @@ public class OracleJDBC {
 
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		System.out.println("Driver loaded");
-		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username",
+		Connection connection = DriverManager.getConnection("jdbc:oracle:thin:hostname:1521:grok", "username",
 				"password");
 
 		System.out.println("Life Expectancy Database is connected :)!");
