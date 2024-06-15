@@ -22,7 +22,7 @@ public class QueryTablePreparedStm2 {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
             System.out.println("Driver loaded");
-            conn = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username", "password");
+            conn = DriverManager.getConnection("jdbc:oracle:thinhostname:1521:grok", "username", "password");
             
             // Create a prepared statement
             String sql = "SELECT COUNTRY_NAME, REGION_ID, LIFE_EXPECTANCY FROM COUNTRIES"
