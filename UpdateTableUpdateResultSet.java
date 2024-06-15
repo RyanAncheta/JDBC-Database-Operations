@@ -16,7 +16,7 @@ public class UpdateTableUpdateResultSet {
         ResultSet resultSet = null;
 
         try {
-            conn = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username", "password");
+            conn = DriverManager.getConnection("jdbc:oracle:thin:hostname:1521:grok", "username", "password");
           
             statement = conn.createStatement();
 
