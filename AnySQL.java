@@ -14,7 +14,7 @@ public class AnySQL {
     public static void executeSQLFromTextArea(String sqlCommand, JTextArea resultArea) {
         try {
             Class.forName("oracle.jdbc.driver.OracleDriver");
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username",
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:hostname:1521:grok", "username",
                     "password");
 
             try (Statement statement = connection.createStatement()) {
