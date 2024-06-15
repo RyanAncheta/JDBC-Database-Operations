@@ -15,7 +15,7 @@ public class UpdateTableStaticSQL {
 
     public static void sortTableAlphabetically(JTextArea resultSetArea) {
         try {
-            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username", "password");
+            Connection connection = DriverManager.getConnection("jdbc:oracle:thin:hostname:1521:grok", "username", "password");
             Statement statement = connection.createStatement();
 
             // SQL query to retrieve all data from COUNTRIES
