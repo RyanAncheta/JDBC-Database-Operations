@@ -21,7 +21,7 @@ public class QueryTableStaticSQL {
                 return;
             }
 
-            try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@calvin.humber.ca:1521:grok", "username", "password");
+            try (Connection connection = DriverManager.getConnection("jdbc:oracle:thin:@hostname:1521:grok", "username", "password");
                  Statement statement = connection.createStatement()) {
 
                 String query = "SELECT * FROM COUNTRIES WHERE COUNTRY_ID = '" + id + "'";
